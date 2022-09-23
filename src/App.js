@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+
+import styled from '@emotion/styled';
 import './App.css';
+import Amount from './components/Amount';
+import Category from './components/Category';
+import Dates from './components/Date';
+
+
+
+const Container = styled.div`
+  padding: 16px;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <h2>Transactions</h2>
+      <Category />
+      <Amount />
+      <Dates />
+
+    </Container>
   );
 }
 

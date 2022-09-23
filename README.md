@@ -1,4 +1,30 @@
-# Getting Started with Create React App
+# Expensable Transactions
+
+## Introduction
+
+Render, filter and sort list items is one of the most common features to implement as a frontend developer. You can leverage the power of React Hooks to make the job easy and resilient.
+
+This week project consist on implementing the Transactions component for the Expensable application.
+
+## Resources
+
+### Figma file: https://www.figma.com/file/Crqtn0kqnB1EKQWZVXE3of/Expensable-React?node-id=4101%3A1163
+
+### Backend API: https://github.com/codeableorg/expensable-api
+
+## Requirements
+
+The transaction component should:
+
+Show all the transactions (expenses and income) for the selected month group by date in descending order.
+Each group should show the sum of all the transactions of the day.
+Expenses should be rendered in color red and income in green.
+A click on the filter icon should open the filters box.
+Changes on the filters inputs should update the transaction list on real time.
+Only days with at least one transaction should be printed.
+Implement at least 2 unit test and 1 E2E test.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
