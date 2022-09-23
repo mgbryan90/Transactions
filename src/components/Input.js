@@ -18,6 +18,7 @@ function Input({
   onChange,
   placeholder,
   label,
+  isNumeric = false,
 }) {
   return (
     <div style={{ width: "45%" }}>
@@ -29,6 +30,7 @@ function Input({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
+        min = {isNumeric ? 0 : ""}
       />
     </div>
   );

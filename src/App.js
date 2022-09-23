@@ -1,9 +1,11 @@
 
 import styled from '@emotion/styled';
+import { useEffect } from 'react';
 import './App.css';
 import Amount from './components/Amount';
 import Category from './components/Category';
 import Dates from './components/Date';
+import apiFetch from './services/api-fetch';
 
 
 
@@ -17,7 +19,20 @@ const Container = styled.div`
 `;
 
 
+
+
 function App() {
+
+  useEffect(() => {
+    apiFetch("/categories")
+    .then((data) => { 
+      console.log(data)
+    })
+    
+  },[])
+
+
+
   return (
     <Container>
       <h2>Transactions</h2>
